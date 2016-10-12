@@ -1,0 +1,23 @@
+{
+  "name": "sqlite101",
+  "version": "1.0.0",
+  "description": "Basic Node.js app interacting with SQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexhortonmusic/sqlite101.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexhortonmusic/sqlite101/issues"
+  },
+  "homepage": "https://github.com/alexhortonmusic/sqlite101#readme",
+  "dependencies": {
+    "sqlite3": "^3.1.6"
+  }
+}
