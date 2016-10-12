@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/alexhortonmusic/sqlite101#readme",
   "dependencies": {
+    "cli-table": "^0.3.1",
     "sqlite3": "^3.1.6"
   }
 }
