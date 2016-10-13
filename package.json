@@ -19,6 +19,7 @@
   "homepage": "https://github.com/alexhortonmusic/sqlite101#readme",
   "dependencies": {
     "cli-table": "^0.3.1",
+    "knex": "^0.12.5",
     "sqlite3": "^3.1.6"
   }
 }

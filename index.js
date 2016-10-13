@@ -87,11 +87,43 @@ db.serialize(() => {
       Employee
     WHERE
       Employee.Title = 'Sales Support Agent'
-    `, (err, staff) => {
-        let name = staff.Name
+    `, (err, employee) => {
+        let name = employee.Name
         salesTbl.push([name])
-      }, () => console.log(salesTbl.toString())
+      }, () => {
+        // console.log(salesTbl.toString())
+      }
     )
+
+  // 5 Provide a query showing a unique list of billing countries from the Invoice table.
+
+  db.all(`
+    SELECT DISTINCT
+      BillingCountry
+    FROM
+      Invoice
+    `, (err, earth) => console.log(earth)
+  )
+
 })
 
 db.close()
+
+const knex = require('knex')({
+  client: 'sqlite3',
+  connection: {
+    filename: 'db/Chinook_Sqlite.sqlite',
+  },
+  useNullAsDefault: true
+})
+
+// 5 Provide a query showing a unique list of billing countries from the Invoice table.
+
+
+
+
+
+// 6 Provide a query showing the invoices of customers who are from Brazil.
+
+
+// 7 Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
